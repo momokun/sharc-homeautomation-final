@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/editTextDialogUserInput"
+        android:maxLines="1"
+        android:imeOptions="actionDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#1A237E"
+        android:hint="Type name here..."
+        android:textColorHint="#bcbfdd">
+
+        <requestFocus />
+
+    </EditText>
+
+</LinearLayout>

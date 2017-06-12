@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SHARC</string>
+    <string name="device_disconnected">Arduino Terputus</string>
+    <string name="updating_state_progressDialog">Memperbaharui data...</string>
+</resources>

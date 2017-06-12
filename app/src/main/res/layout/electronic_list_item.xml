@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    android:paddingTop="25dp"
+    android:paddingBottom="25dp"
+    android:gravity="center_vertical|center_horizontal|center">
+
+    <ImageView
+        android:src="@drawable/plug"
+        android:id="@+id/ic_electronic"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="7dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:text="Electronic N"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/electronicItemCustom"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000" />
+
+    <ImageButton
+        android:src="@drawable/ic_setting"
+        android:layout_height="29dp"
+        android:id="@+id/customizeElectronicCustom"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:elevation="0dp"
+        android:background="@android:color/transparent"
+        android:layout_width="26dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:src="@drawable/edit"
+        android:layout_height="29dp"
+        android:id="@+id/changeNameCustom"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:elevation="0dp"
+        android:background="@android:color/transparent"
+        android:layout_width="26dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:id="@+id/toggleButtonElectronicCustom"
+        android:background="@drawable/toggle_state_bg"
+        android:layout_marginRight="10dp"
+        android:textColor="#00000000"
+        android:layout_weight="0.01"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="30dp"
+        android:layout_width="28dp" />
+
+</LinearLayout>
+

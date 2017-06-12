@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:text="Temperature Detection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enableTempDetect"
+            android:layout_weight="1"
+            android:theme="@style/MyCheckBox" />
+
+        <TextView
+            android:text="Temp :"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="#1A237E" />
+
+        <TextView
+            android:text="00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showTempVal"
+            android:textColor="#1A237E" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sbTemp"
+        android:maxHeight="40dp"
+        android:minHeight="40dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:text="Light Intensity Detection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enableLightDetect"
+            android:layout_weight="1"
+            android:theme="@style/MyCheckBox" />
+
+        <TextView
+            android:text="Light: "
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textColor="#1A237E" />
+
+        <TextView
+            android:text="00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showLightVal"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sbLight"
+        android:maxHeight="40dp"
+        android:minHeight="40dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <CheckBox
+            android:text="Timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/enableTimer"
+            android:theme="@style/MyCheckBox" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp">
+
+            <DatePicker
+                android:layout_width="288dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-55dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginRight="-50dp"
+                android:layout_marginBottom="-30dp"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+
+                android:id="@+id/dateValue"
+                android:saveEnabled="false"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:headerBackground="#1A237E" />
+
+            <TimePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-55dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginRight="-50dp"
+                android:layout_marginBottom="-30dp"
+                android:timePickerMode="spinner"
+                android:id="@+id/timerValue"
+                android:layout_weight="1"
+                android:scaleX="0.7"
+                android:scaleY="0.7" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

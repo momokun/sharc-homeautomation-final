@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">SHARC</string>
+    <string name="device_disconnected">SHARC Disconnected</string>
+    <string name="updating_state_progressDialog">Updating data...</string>
+    <string name="item_header_1">Terrace</string>
+    <string name="item_header_2">Bed Room</string>
+    <string name="item_header_3">Living Room</string>
+    <string name="item_header_4">Kitchen</string>
+    <string name="close_snack_bar">Close</string>
+    <string name="close_alert_dialog">Close</string>
+</resources>

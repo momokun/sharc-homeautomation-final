@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <TextView
+        android:text="graph_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/graph_name"
+        android:layout_weight="0.08"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#000" />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="wrap_content"
+        android:layout_height="199dp"
+        android:id="@+id/graph"
+        android:layout_gravity="center">
+    </com.jjoe64.graphview.GraphView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_date_range"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_date_array" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.23"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:text="Your estimated electricity price in Rp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calcPrice"
+            android:gravity="center"
+            android:textColor="#000" />
+    </LinearLayout>
+
+
+</LinearLayout>

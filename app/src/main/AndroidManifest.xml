@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gs.momokun.homeautomationx">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@drawable/ic_sharc"
+        android:label="SHARC"
+        android:supportsRtl="true"
+        android:name="gs.momokun.homeautomationx.BaseApplication"
+        android:theme="@style/AppTheme">
+        <service android:name="gs.momokun.homeautomationx.tools.BluetoothDataService"/>
+
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:parentActivityName="gs.momokun.homeautomationx.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="gs.momokun.homeautomationx.MainActivity" />
+        </activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

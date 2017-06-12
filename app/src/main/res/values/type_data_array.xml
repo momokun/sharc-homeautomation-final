@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_data_array">
+        <item>Temperature (°C)</item>
+        <item>Watt (W)</item>
+        <item>Current (A)</item>
+        <item>Energy Consumed (kWh)</item>
+    </string-array>
+</resources>

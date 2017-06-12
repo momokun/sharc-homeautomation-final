@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <TextView
+        android:text="graph_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/graph_name"
+        android:layout_weight="0.08"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:paddingBottom="5dp" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_weight="0.36"
+        android:layout_height="250dp"
+        android:soundEffectsEnabled="true" />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_date_range"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:soundEffectsEnabled="true"
+        android:splitMotionEvents="false" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_date_array"
+        android:soundEffectsEnabled="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.23"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:text="Your estimated electricity price in Rp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewedBy"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/ap_black" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calcPrice"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_weight="1"
+                android:textAlignment="viewStart" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="Estimation: Rp1.467,-/kWh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView9"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textSize="10sp"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
